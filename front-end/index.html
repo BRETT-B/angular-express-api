@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="searchStudentApp">
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script type="text/javascript" src="controller.js"></script>
+<body ng-controller="searchStudentController">
+	{{message}}
+
+	<li ng-repeat="student in myClass track by $index">
+		{{student.name}}
+	</li>
+	{{result}}
+</body>
+</html>
